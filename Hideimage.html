@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kuvapiilotus</title>
+</head>
+<body>
+
+    
+    <img id="koirakuva" src="C:\Users\mikko.perakyla\Desktop\köbb.jpg" alt="koira">
+
+    <br><br>
+
+    
+    <button onclick="kuvapiilotus()">Hide</button>
+
+    <script>
+        function kuvapiilotus() {
+            let image = document.getElementById("koirakuva");
+            let button = document.querySelector("button");
+
+            if (image.style.display === "none") {
+                image.style.display = "block";
+                button.innerText = "Piilota";
+            } else {
+                image.style.display = "none";
+                button.innerText = "Näytä";
+            }
+        }
+    </script>
+
+</body>
+</html>
